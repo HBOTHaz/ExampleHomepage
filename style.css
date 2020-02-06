@@ -93,6 +93,7 @@ header {
     margin: 10px;
 }
 
+/* 다운로드 버튼 (기능 미구현 상태) */
 .ImageSection > div > .ImgText > .downloadBtn {
     display: inline-block;
     margin: 5px;
