@@ -130,6 +130,8 @@ footer {
     border-radius: 25px;
     bottom: 10%;
     right: 1%;
+
+    cursor: pointer;
 }
 
 .discordpanel > img {
