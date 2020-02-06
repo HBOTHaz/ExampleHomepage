@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
 html {
+    max-width: 2000px;
     position: relative;
     display: inline-block;
     width: 100%;
@@ -16,11 +17,23 @@ body {
     text-align: center;
     background-color: black;
 }
+
+.emptytop {
+    display: inline-block;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+}
+
 header {
+    background-image: url(channel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: inline-block;
     background-color: white;
     width: 80%;
-    padding-top: 90px;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 
@@ -31,7 +44,7 @@ header {
     left: 0;
     display: inline-block;
     width: 100%;
-    border: 1px solid black;
+    border: 3px solid black;
     background-color: white;
 }
 
@@ -49,9 +62,22 @@ header {
     padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    border: 1px solid black;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 25px;
     float: left;
     cursor: pointer;
+}
+
+.topbar > ul > li:active {
+    transform: scale(0.95);
+}
+
+.topbar > ul > li > a {
+    all:unset;
+    display: block;
+    margin: auto;
+    font-weight: bold;
 }
 
 /* 이미지 */
@@ -66,20 +92,25 @@ header {
     background-color: white;
 }
 
+/* 이미지가 삽입되는 큰 틀 */
 .ImageSection > div {
     display: inline-block;
+    height: 100%;
+    max-height: 1170px;
     width: max-content;
     margin: 30px;
     padding: 10px;
     border: 5px solid black;
 }
 
+/* 이미지 삽입 부분 */
 .ImageSection > div > img {
     border: 5px solid black;
     height: 1020px;
     width: 640px;
 }
 
+/* 이미지 하단 구역 */
 .ImageSection > div > .ImgText {
     align-items: center;
     margin-top: 2px;
@@ -93,7 +124,7 @@ header {
     margin: 10px;
 }
 
-/* 다운로드 버튼 (기능 미구현 상태) */
+/* 다운로드 버튼 (기능을 HTML로 구현하였음) */
 .ImageSection > div > .ImgText > .downloadBtn {
     display: inline-block;
     margin: 5px;
@@ -103,7 +134,18 @@ header {
     cursor: pointer;
 }
 
-.ImageSection > div > .ImgText > .downloadBtn > p {
+.ImageSection > div > .ImgText > .downloadBtn > a {
+    all:unset;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+}
+
+.downloadBtn:active {
+    transform: scale(0.95);
+}
+
+.ImageSection > div > .ImgText > .downloadBtn > a > p {
     display: inline-block;
     margin: 10px;
     font-weight: bold;
@@ -118,7 +160,7 @@ footer {
     padding-bottom: 90px;
 }
 
-/* 디스코드 */
+/* 디스코드 버튼 */
 
 .discordpanel {
     position: fixed;
@@ -130,20 +172,31 @@ footer {
     border-radius: 25px;
     bottom: 10%;
     right: 1%;
-
     cursor: pointer;
 }
 
-.discordpanel > img {
+.discordpanel > a > img {
     margin-top: 20px;
     width: 150px;
     height: 150px;
 }
 
-.discordpanel > p {
+.discordpanel > a {
+    all:unset;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+}
+
+.discordpanel > a > p {
+    display: inline-block;
     margin: 10px;
     font-size: 25px;
     font-weight: bold;
+}
+
+.discordpanel:active {
+    transform: scale(0.95);
 }
 
 /* 하단바 */
@@ -154,7 +207,7 @@ footer {
     left: 0;
     display: inline-block;
     width: 100%;
-    border: 1px solid black;
+    border: 3px solid black;
     background-color: white;
 }
 
