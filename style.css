@@ -100,6 +100,7 @@ header {
     height: 40px;
     width: 200px;
     border-radius: 95px;
+    cursor: pointer;
 }
 
 .ImageSection > div > .ImgText > .downloadBtn > p {
@@ -115,6 +116,32 @@ footer {
     width: 80%;
     padding-top: 30px;
     padding-bottom: 90px;
+}
+
+/* 디스코드 */
+
+.discordpanel {
+    position: fixed;
+    display: inline-block;
+    width: 175px;
+    height: 225px;
+    background-color: blanchedalmond;
+    border: 5px solid black;
+    border-radius: 25px;
+    bottom: 10%;
+    right: 1%;
+}
+
+.discordpanel > img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.discordpanel > p {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* 하단바 */
