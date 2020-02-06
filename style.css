@@ -84,12 +84,27 @@ header {
     align-items: center;
     margin-top: 2px;
     margin-bottom: 5px;
-    height: 50px;
+    padding: 10px;
+    height: auto;
     border: 5px solid black;
 }
 
 .ImageSection > div > .ImgText > h2 {
     margin: 10px;
+}
+
+.ImageSection > div > .ImgText > .downloadBtn {
+    display: inline-block;
+    margin: 5px;
+    height: 40px;
+    width: 200px;
+    border-radius: 95px;
+}
+
+.ImageSection > div > .ImgText > .downloadBtn > p {
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
 }
 
 /* 최하단 */
